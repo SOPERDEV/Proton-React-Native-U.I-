@@ -28,7 +28,7 @@ export default class Auth extends Component {
   }
 
   userSignUp = (emailId, password, confirmPassword) => {
-    /* if (password !== confirmPassword) {
+   if (password !== confirmPassword) {
       return Alert.alert("password doesn't match\nCheck your password.");
     } else {
       firebase
@@ -56,11 +56,11 @@ export default class Auth extends Component {
           var errorMessage = error.message;
           return Alert.alert(errorMessage);
         });
-    }*/
+    }
   };
 
   userLogin = (emailId, password) => {
-    /* firebase
+     firebase
       .auth()
       .signInWithEmailAndPassword(emailId, password)
       .then(() => {
@@ -70,7 +70,7 @@ export default class Auth extends Component {
         var errorCode = error.code;
         var errorMessage = error.message;
         return Alert.alert(errorMessage);
-      });*/
+      });
   };
 
   showModal = () => {
